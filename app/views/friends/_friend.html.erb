@@ -1,0 +1,20 @@
+<tr id="<%= dom_id friend %>">
+  <td>
+    <%= link_to friend.first_name + ' ' + friend.last_name, friend %>
+    <%= link_to edit_friend_path(friend) do %>
+      <i class="fa fa-edit"></i>
+    <% end %>
+  </td>
+
+  <td>
+    <%= friend.email %>
+  </td>
+
+  <td>
+    <%= friend.phone %>
+  </td>
+
+  <td>
+    <%= friend.twitter %>
+  </td>
+
